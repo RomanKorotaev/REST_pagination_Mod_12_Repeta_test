@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Пагинация с REST API</title>
 </head>
 <body>
     <h1>REST_pagination_Mod_12_Repeta_test</h1>
 
-    <form class="search-form" id="search-form">
-        <input type="text" name="query" autocomplete="off" placeholder="Search ..." id="input" />
-        <button >Search</button>
+    <form class="form-inline search-form js-search-form">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="searchQuery" class="sr-only">Что ищем?</label>
+            <input type="text" class="form-control" name="query" id="searchQuery" placeholder="Что ищем?"
+                autocomplete="off" />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Искать</button>
     </form>
-
-    <button type="submit">Search more</button>
     
-    <ul class="gallery">
-        <!-- Список <li> с карточками изображений -->
-    </ul>
+    <ul class="articles js-articles-container"></ul>
+    
+    <button type="button" class="btn btn-primary button" data-action="load-more">
+        <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span>
+    
+        <span class="label">Показать ещё</span>
+    </button>
+
 
     
     <script src="./index.js"> </script>

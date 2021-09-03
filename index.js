@@ -1,4 +1,13 @@
-console.log ("Hello, World!")
+//import './css/common.css';
+import './src/css/common.css'
+
+
+const refs = {
+    searchForm: document.querySelector('.js-search-form'),
+    articlesConteiner: document.querySelector('.js-articles-container')
+}
+
+
 
 const options = {
     headers: {
@@ -6,7 +15,11 @@ const options = {
     }
 }
 
-fetch(' https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5&page=2', options)
+const url = 'https://newsapi.org/v2/everything?q=cat&language=en&pageSize=5&page=1'
+
+
+
+fetch(url, options)
     .then(response => response.json())
     .then(console.log)
     .catch(error => console.log(error))
