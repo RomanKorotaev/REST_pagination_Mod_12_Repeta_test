@@ -40,6 +40,7 @@ function onSearchMoreBtn() {
     refs.articlesConteiner.innerHTML = '';
  }
 
+ // функция прокрутки/склола экрана к кнопке "Загрузить ещё" при дополнительной загрузке карточек.
 function scrollGallery() {
      refs. searchMoreBtn.scrollIntoView({
      behavior: 'smooth',
