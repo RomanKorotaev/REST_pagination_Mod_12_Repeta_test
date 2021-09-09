@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/RomanKorotaev/REST_pagination_Mod_12_Repeta_test#readme",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "dev": "parcel index.html",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
@@ -17,10 +19,13 @@
   "bugs": {
     "url": "https://github.com/RomanKorotaev/REST_pagination_Mod_12_Repeta_test/issues"
   },
-  "homepage": "https://github.com/RomanKorotaev/REST_pagination_Mod_12_Repeta_test#readme",
+  
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4"
   }
 }
