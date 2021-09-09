@@ -77,7 +77,7 @@ function scrollGallery() {
   });
 }
 
-////+++
+
 
 
 
