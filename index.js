@@ -77,6 +77,7 @@ function scrollGallery() {
   });
 }
 
+/*"homepage": "https://github.com/RomanKorotaev/REST_pagination_Mod_12_Repeta_test#readme",*/
 
 
 
