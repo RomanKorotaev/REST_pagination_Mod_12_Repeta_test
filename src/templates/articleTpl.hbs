@@ -1,0 +1,16 @@
+{{#each this}}
+    <li>
+        <div>
+            <img 
+            src="{{urlToImage}}" alt="{{title}}" data-source='' width='320' height='240'
+                class='' />
+        </div>
+        <div>
+            <h2>{{title}}</h2>
+            <p>Author:{{author}} </p>
+            <p>Published at: {{publishedAt}} </p>
+            <p>Description: {{description}} </p>
+            <p>{{content}}</p>
+         </div>
+    </li>
+{{/each}}
