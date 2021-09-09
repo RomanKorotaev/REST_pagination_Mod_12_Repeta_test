@@ -4,6 +4,8 @@ import articleTpl from './src/templates/articleTpl.hbs'
 import refs from './src/js/refs'
 import ArticlesApiService from './src/js/api_service'
 import LoadMoreBtn from './src/js/components/load-more-btn.js'
+import * as basicLightbox from 'basiclightbox'
+import './node_modules/basiclightbox/dist/basiclightbox.min.css'
 
 
 const articlesApiService = new ArticlesApiService;
@@ -77,8 +79,28 @@ function scrollGallery() {
   });
 }
 
+
+//  --------------------  Открытие модального окна через библиотеку  basiclightbox
+// материал по Лекции Вовы Мельника. Модуль 13. Занятие 25 CRUD.  Время: 30:00
+
+refs.articlesConteiner.addEventListener ('click', showLightBox)
+
+function showLightBox(event) {
+  const imageItem = event.target;
+  console.log("imageItem = event.target : ", imageItem)
+  
+    if (imageItem.classList.contains('gallery-image')) {
+        const modalWindowBasicLightBox= basicLightbox.create(`<img src="${imageItem.dataset.source}" >` );
+
+        console.log('Сработала функция  showLightBox')
+        modalWindowBasicLightBox.show()
+    }
+}
+ 
+//  --------------------
+
 /*"homepage": "https://github.com/RomanKorotaev/REST_pagination_Mod_12_Repeta_test#readme",*/
 
-
+/* "homepage": "https://RomanKorotaev.github.io/rest_pagination_mod_12_repeta_test", */
 
 
